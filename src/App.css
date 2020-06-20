@@ -1,0 +1,110 @@
+@import url('https://fonts.googleapis.com/css2?family=Source+Sans+Pro&display=swap');
+
+* {
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+    font-family: 'Source Sans Pro', sans-serif;
+    font-size: 16px;
+  }
+
+.app {
+  background-color: #7bbce8;
+  background-image: url("https://www.transparenttextures.com/patterns/asfalt-light.png");
+  height: 100vh;  
+  }
+  
+
+  /* NAV */
+  nav {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 60px;
+    background: rgb(145, 144, 189);
+    color: white;
+  }
+  
+  .nav-links {
+    width: 20%;
+    list-style: none;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+  }
+  
+  .navLink{
+    color: white;
+  }
+
+    /* Home page */
+  .page-container {
+    background: #f2f2f5;    
+    max-width: 400px;
+    display: flex;
+    justify-content: flex-start;
+    flex-direction: column;
+    margin: auto;
+    min-height: calc(100vh - 60px);
+    padding: 20px;
+  }
+  
+  .link {
+    background: #fff;
+    height: 72px;
+    border-radius: 10px;
+    
+    -webkit-box-shadow: 0px 6px 14px -1px rgba(0,0,0,0.75), 0px 1px 1px rgba(0, 0, 0, 0.15);
+    -moz-box-shadow: 0px 6px 14px -1px rgba(0,0,0,0.75), 0px 1px 1px rgba(0, 0, 0, 0.15);
+    box-shadow: 0px 6px 8px -1px rgba(0,0,0,0.1), 0px 1px 1px rgba(0, 0, 0, 0.15);
+   
+    padding: 3px 10px;
+    font-size: 18px;
+    margin-top: 10px;
+    
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  .button-container {
+    display: flex;  
+  }
+
+  .button-delete {
+    height: 50px;
+    width: 46px;
+    border: 1px solid #f5c6cb;
+    background-color: #f8d7da;
+    border-radius: 10px;
+    margin-left: 5px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .button-edit {
+    height: 50px;
+    width: 46px;
+    border: 1px solid #f1f1f1;
+    background-color: #e7e7e7;
+    border-radius: 10px;
+    margin-left: 5px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .input {
+    height: 50px;
+    width: 100%;
+    border-top: 0px solid gainsboro;
+    border-bottom: 1px solid gainsboro;
+    border-left: 1px solid gainsboro;
+    border-right: 1px solid gainsboro;
+    margin-bottom: 10px;
+    padding-left: 20px;
+  }
+
