@@ -3,7 +3,7 @@ var config = require('./api/config/config');
 var express = require('express')
 
 let app = express();
-let port = process.env.PORT || 3000;
+let port = process.env.PORT || 5000;
 
 
 mongodbUser = config.mongodbUser;

@@ -14,7 +14,7 @@ export const CreateLink = () => {
     if (!link.name || !link.link) return
 
     const newLink = {
-      _id: Math.floor(Math.random() * 100000000),
+      // _id: Math.floor(Math.random() * 100000000),
       name: link.name,
       link: link.link
     }
