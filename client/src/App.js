@@ -18,6 +18,7 @@ function App() {
 
     <GlobalProvider>
     <div className="app">
+    
     < Nav />
     <Switch>
       <Route path="/" exact component={LinkHome}/>
@@ -25,10 +26,6 @@ function App() {
       <Route path="/editlink/:id" exact component={EditLink}/>
     </Switch>
 
-
-      {/* <TodoForm/>
-      <Link/>         */}
-    
     </div>
     </GlobalProvider>
 

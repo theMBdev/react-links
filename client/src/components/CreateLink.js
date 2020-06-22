@@ -14,14 +14,12 @@ export const CreateLink = () => {
     if (!link.name || !link.link) return
 
     const newLink = {
-      id: Math.floor(Math.random() * 100000000),
+      _id: Math.floor(Math.random() * 100000000),
       name: link.name,
       link: link.link
     }
 
     addLink(newLink);
-    // setName('');
-    // setLink('');
     // redirects to home page on succesfull submit
     history.push("/");
   }
@@ -32,8 +30,8 @@ export const CreateLink = () => {
   return (
     <div className="page-container">
       <form class="" onSubmit={handleSubmit}>
-        <input type="text" className="input" value={link.name} onChange={e => handleOnChange("name", e.target.value)} placeholder="Link Name..."></input>
-        <input type="text" className="input" value={link.link} onChange={e => handleOnChange("link", e.target.value)} placeholder="Link e.g. www.youtube.com"></input>
+        <input type="text" className="input" value={link.name || ''} onChange={e => handleOnChange("name", e.target.value)} placeholder="Link Name..."></input>
+        <input type="text" className="input" value={link.link || ''} onChange={e => handleOnChange("link", e.target.value)} placeholder="Link e.g. www.youtube.com"></input>
         <button type="submit">Post</button>
       </form>
     </div>
