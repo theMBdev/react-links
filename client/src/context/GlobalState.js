@@ -2,8 +2,6 @@ import React, { createContext, useReducer } from 'react';
 import AppReducer from './AppReducer';
 import axios from 'axios';
 
-
-// False data for now untill the api is created
 const initialState = {
   links: [],
   error: null,
@@ -82,7 +80,6 @@ export const GlobalProvider = ({ children }) => {
         name: link.name,
         link: link.link
       });
-      // console.log("Res.data", res.data)
 
       // dispatch({
       //   type: 'EDIT_LINK',
@@ -107,7 +104,6 @@ export const GlobalProvider = ({ children }) => {
       } catch (err) {
         dispatch({
           type: 'LINK_ERROR',
-          // payload: err.response.data.error
           payload: err.response
         });
       }
