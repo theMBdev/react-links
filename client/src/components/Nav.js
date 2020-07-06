@@ -5,7 +5,10 @@ import { Link } from 'react-router-dom';
 export const Nav = () => {
     return (
         <nav>
-            <h3>Title</h3>
+		<div className="nav-container">
+			
+		
+            <h3>Links</h3>
             <ul className="nav-links">
                 <Link className="navLink" to="/">
                     <li>Home</li>
@@ -14,6 +17,9 @@ export const Nav = () => {
                     <li>Create</li>
                 </Link>
             </ul>
+		
+		</div>
+		
         </nav>
     );
 }

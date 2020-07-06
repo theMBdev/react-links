@@ -45,14 +45,18 @@ export const EditLink = ({ match }) => {
             <form className="" onSubmit={onSubmit}>
                 <input type="text" className="input" value={selectedLink.name || ''} onChange={e => handleOnChange("name", e.target.value)} placeholder="Link Name..."></input>
                 <input type="text" className="input" value={selectedLink.link || ''} onChange={e => handleOnChange("link", e.target.value)} placeholder="Link Url..."></input>
-                <button type="submit">
-                    Edit Link
-            </button>
+
+				<div className="button-container">					
+					<button className="main-button button-primary" type="submit">
+						Save
+					</button>
+		
+                	<Link to={`/`}>  <button className="main-button button-delete" onClick={() => deleteLink(selectedLink._id)}>Delete</button></Link>
+            	</div>
+
             </form>
 
-            <div className="button-container">
-                <Link to={`/`}>  <button className="button-delete" onClick={() => deleteLink(selectedLink._id)}><img src="./x.png" alt="x"></img></button></Link>
-            </div>
+            
 
         </div>);
 

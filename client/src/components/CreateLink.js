@@ -32,7 +32,10 @@ export const CreateLink = () => {
       <form class="" onSubmit={handleSubmit}>
         <input type="text" className="input" value={link.name || ''} onChange={e => handleOnChange("name", e.target.value)} placeholder="Link Name..."></input>
         <input type="text" className="input" value={link.link || ''} onChange={e => handleOnChange("link", e.target.value)} placeholder="Link e.g. www.youtube.com"></input>
-        <button type="submit">Post</button>
+				<div className="button-container">					
+
+        <button className="main-button button-primary" type="submit">Create</button>
+		</div>
       </form>
     </div>
   )

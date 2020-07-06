@@ -8,25 +8,69 @@
     font-size: 16px;
   }
 
+a:link {
+  text-decoration: none;
+	color: #131313;
+}
+
+a:visited {
+  text-decoration: none;
+	color: #131313;
+}
+
+a:hover {
+  text-decoration: none;
+	color: #FCA311;
+}
+
+a:active {
+  text-decoration: none;
+	color: #131313;
+}
+
 .app {
-  background-color: #7bbce8;
+  background-color: #ffdca3;
   background-image: url("https://www.transparenttextures.com/patterns/asfalt-light.png");
   height: 100vh;  
-  }
-  
+  }  
 
   /* NAV */
-  nav {
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
+  nav {    
     height: 60px;
-    background: rgb(145, 144, 189);
+    background: #0A0A0A;
     color: white;
   }
+
+.nav-container {
+	display: flex;
+    justify-content: space-between;
+    align-items: center;
+	height: inherit;
+	max-width: 400px;
+	margin: auto;
+}
+
+nav a:link {
+  text-decoration: none;
+	color: white;
+}
+
+nav a:visited {
+  text-decoration: none;
+	color: white;
+}
+
+nav a:hover {
+  text-decoration: none;
+	color: #FCA311;
+}
+
+nav a:active {
+  text-decoration: none;
+	color: white;
+}
   
-  .nav-links {
-    width: 20%;
+  .nav-links {    
     list-style: none;
     display: flex;
     justify-content: space-around;
@@ -35,11 +79,12 @@
   
   .navLink{
     color: white;
+	  margin-right: 10px;
   }
 
     /* Home page */
   .page-container {
-    background: #f2f2f5;    
+    background: #14213D;    
     max-width: 400px;
     display: flex;
     justify-content: flex-start;
@@ -50,7 +95,7 @@
   }
   
   .link {
-    background: #fff;
+    background: #E5E5E5;
     height: 72px;
     border-radius: 10px;
     
@@ -69,32 +114,41 @@
 
   .button-container {
     display: flex;  
+	  justify-content: center;
   }
 
-  .button-delete {
-    height: 50px;
-    width: 46px;
-    border: 1px solid #f5c6cb;
-    background-color: #f8d7da;
-    border-radius: 10px;
-    margin-left: 5px;
+.main-button {
+	border: none;
+	padding: 10px 20px;
+	border-radius: 10px;
+	margin-left: 5px;
+	margin-right: 5px;
+	cursor: pointer;
+}
 
-    display: flex;
-    justify-content: center;
-    align-items: center;
+	.button-primary {
+		background-color: #FCA311;
+		border: 1px solid #FCA311;
+	}
+
+  .button-delete {     
+    background-color: transparent;
+	  border: 1px solid red;
+	  color: red;
   }
 
   .button-edit {
     height: 50px;
     width: 46px;
     border: 1px solid #f1f1f1;
-    background-color: #e7e7e7;
+    background-color: #FCA311;
     border-radius: 10px;
     margin-left: 5px;
 
     display: flex;
     justify-content: center;
     align-items: center;
+	  cursor: pointer;
   }
 
   .input {
@@ -107,4 +161,7 @@
     margin-bottom: 10px;
     padding-left: 20px;
   }
+
+
+
 

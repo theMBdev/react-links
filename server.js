@@ -37,7 +37,7 @@ var routes = require('./api/routes/linkRoutes'); //importing route
 routes(app); //register the route
 
 app.listen(port, () => {
-    console.log('Lists api server started on: ' + port);
+    console.log('Links api server started on: ' + port);
 });
 
 app.use(function(req, res) {
